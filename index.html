@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kevin Solorzano</title>
+    <meta
+        name="description"
+        content="The WDD 131 - Dynamic Web Fundamentals is here to provide information on Kevin solorzano and show his course assigment portal">
+    <meta name="author" content="Kevin Solorzano">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>Wdd131</h1>
+    <body>
+        <header>
+            <h1>WDD 131: Dynamic Web Fundamentals - Kevin Solorzano</h1>
+            <nav>
+                <ul class="navig">
+                    <li><a href="https://www.linkedin.com/" target="_blank">linkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+                    <li><a href="#" target="_blank">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2 class="aboutMe">About Me</h2>
+                <img src="images/me.webp" alt="portrait">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolor assumenda, deleniti obcaecati esse atque corporis perspiciatis pariatur libero possimus voluptatibus neque consectetur illo! Perferendis reprehenderit incidunt cupiditate laudantium aperiam.</p>
+                <br>
+                <h2 class="location">California, United States</h2>
+                <hr>
+                <img class="flag" src="images/cali.webp" alt="">
+                <p class="aboutLocation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eius sapiente atque. Iste repudiandae soluta, explicabo velit quis alias possimus deserunt dolores laboriosam voluptas sunt adipisci animi corrupti omnis pariatur.</p>
+                
+            </section>
+            <section class="card">
+                <h2 class="webResource">Web Dev Resource</h2>
+                <p>
+                    <ul class="resourceList">
+                        <li><a href="#" target="_blank">Dev.to Community</a></li>
+                        <li><a href="#" target="_blank">Smashing Magazine</a></li>
+                        <li><a href="#" target="_blank">CSS Tricks</a></li>
+                        <li><a href="#" target="_blank">W3 Schools</a></li>
+                        <li><a href="#" target="_blank">Udemy</a></li>
+                        <li><a href="#" target="_blank">Image</a></li>
+                    </ul> 
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy; <span id="currentyear"></span> Kevin Solorzano California
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/getdates.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Forum, Halvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto auto;
+    color: #eee;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+header {
+    background: rgb(60, 124, 177);
+    /* padding: 1rem; */
+    grid-column: 1/4;
+    /* border: 1px solid rgb(0 0 0 / 0.1); */
+    text-align: center;
+    /* justify-content: flex-end; */
+    /* height: 190px; */
+}
+header h1 {
+    padding: 5rem;
+}
+
+/* The body of the web starts */
+main{
+    /* background: pink; */
+    /* grid-column: 1/4; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    color: #000;
+    /* justify-content: space-between;
+    padding: 100px; */
+}
+main section{
+    margin: 0.5rem;
+    border:1px solid #000;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+main section .webResource, .aboutMe {
+    /* margin: auto; */
+    /* width: 100%; */
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px; */
+    color: #eee;
+    background-color: #000;
+    white-space: nowrap;
+    padding: 20px;
+}
+main img {
+    float: right;
+    margin-left: 10px;
+    padding: 50px;
+}
+.location {
+    margin: 10px;
+}
+main p
+{
+    display: block;
+    text-align: left;
+    padding: 50px;
+}
+.aboutLocation {
+    margin-right: 400px;
+}
+.flag {
+    display: block;
+    float: left;
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+}
+.resourceList{
+    justify-items: start;
+    list-style-position: inside;
+    padding: 50px;
+}
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+/* .card {
+    display: flex;
+} */
+
+/* The body of the web Ends */
+footer {
+    background: rgb(60, 124, 177);;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+    
+}
+
+/* Start of the menu bar*/
+nav {
+    /* margin: 0 auto 2rem; */
+    max-width: 100%;
+    /* grid-column: 1/4; */
+    /* position: absolute; */
+}
+.navig {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    align-items: center;
+    
+}
+.navig li {
+    flex: 1 1 auto;
+}
+.navig a {
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    text-decoration: overline;
+}
+
