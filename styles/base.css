@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Playfair+Display&display=swap');
-
+/* Edit the whole body of the page, it will be a base design for the page */
 * {
     box-sizing: border-box;
     font-family: Forum, Halvetica, sans-serif;
@@ -7,114 +7,37 @@
     padding: 0;
 }
 
+
+/* Edits to the body of the age can be made here */
 body {
     display: grid;
     height: 100vh;
     grid-template: auto 1fr auto / auto auto;
     color: #eee;
-    font-size: 3rem;
     text-align: center;
     
 }
+
+
+/* Edits to the header of the page can be made here */
 header {
     background: rgb(18, 100, 167);
-    /* padding: 1rem; */
     grid-column: 1/4;
     /* border: 1px solid rgb(0 0 0 / 0.1); */
     text-align: center;
-    /* justify-content: flex-end; */
-    /* height: 190px; */
 }
 header h1 {
-    padding: 5rem;
+    padding: 3rem;
 }
 
-/* The body of the web starts */
-main{
-    /* background: pink; */
-    /* grid-column: 1/4; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    display: flex;
-    color: #000;
-    /* justify-content: space-between;
-    padding: 100px; */
-}
-main section{
-    margin: 0.5rem;
-    border:1px solid #000;
-    border-radius: 10px;
-    margin: 30px;
-}
 
-main section .webResource, .aboutMe {
-    /* margin: auto; */
-    /* width: 100%; */
-    /* padding-top: 10px;
-    padding-bottom: 10px;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px; */
-    color: #eee;
-    background-color: #000;
-    white-space: nowrap;
-    padding: 20px;
-}
-main img {
-    float: right;
-    margin-left: 10px;
-    padding: 50px;
-}
-.location {
-    margin: 10px;
-    
-}
-main p
-{
-    display: block;
-    text-align: left;
-    padding: 50px;
-}
-
-/* .aboutLocation {
-    margin-right: 400px;
-} */
-.flag {
-    display: block;
-    float: left;
-    width: 500px;
-    height: auto;
-    /* margin-top: 100px; */
-}
-.resourceList{
-    justify-items: start;
-    list-style-position: inside;
-    padding: 50px;
-}
-hr {
-    width: 90%;
-    margin: 20px auto;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-}
-
-/* The body of the web Ends */
-footer {
-    background: rgb(18, 100, 167);;
-    padding: 2rem;
-    text-align: center;
-    grid-column: 1/4;
-    
-}
-
-/* Start of the menu bar*/
-nav {
-    /* margin: 0 auto 2rem; */
+/* Edits to the menu bar are done here*/
+/* nav {
+    margin: 0 auto 2rem;
     max-width: 100%;
-    /* grid-column: 1/4; */
-    /* position: absolute; */
-}
+    grid-column: 1/4;
+    position: absolute;
+} */
 .navig {
     list-style: none;
     display: flex;
@@ -136,4 +59,93 @@ nav {
 nav a:hover {
     text-decoration: overline;
 }
+
+
+/* Edits to the main element are made here */
+main{
+    /* background: pink; */
+    grid-column: 1/4;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* display: flex; */
+    color: #000;
+    /* justify-content: space-between;
+    padding: 100px; */
+}
+main section{
+
+
+    margin: 0.5rem;
+    border:1px solid #000;
+    border-radius: 10px;
+    margin: 30px;
+    /* overflow: hidden; */
+    max-width: 100%;
+}
+
+main section .webResource, .aboutMe {
+    color: #eee;
+    background-color: #000;
+    white-space: nowrap;
+    padding: 20px;
+    width: 100%;
+}
+main img {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ main div {
+    display: flex;
+    /* flex-wrap: wrap; */
+    
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    overflow: hidden;
+ }
+.location {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    
+}
+main p
+{
+    display: block;
+    /* text-align: left; */
+    padding: 20px;
+}
+
+.flag {
+    /* display: block; */
+    /* float: left; */
+    max-width: 50%;
+    height: auto;
+    /* margin-top: 100px; */
+}
+.resourceList{
+    justify-items: start;
+    list-style-position: inside;
+    padding: 50px;
+}
+hr {
+    width: 90%;
+    margin: 20px auto;
+}
+/* .card {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Edits to the footer are made here*/
+footer {
+    background: rgb(18, 100, 167);;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+    
+}
+
 
