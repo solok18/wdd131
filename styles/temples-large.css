@@ -1,0 +1,33 @@
+@media (min-width: 450px) {
+    /* main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(4) {
+		display: block;
+	}
+
+	main section:nth-child(5) {
+		grid-column: span 2;
+	} */
+    header {
+        flex-direction: row;
+    }
+     nav ul {
+		display: flex;
+	}
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navig{
+        display: flex;
+		flex-direction: row;
+		justify-content: right;
+	}
+
+	.navig a {
+		display: block;
+		flex: 1 1 100%;
+	}
+}
