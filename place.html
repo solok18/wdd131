@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala</title>
+    <meta
+        name="description"
+        content="This webpage is here to provide basic informaion on Guatemala">
+    <meta name="author" content="Kevin Solorzano">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/antigua-guate-small.webp" media="(max-width: 500px)">
+                <source srcset="images/antigua-guate-medium.webp" media="(max-width: 1000px)">
+                <img class="hero-image" src="images/antigua-guate-large.webp" alt="sacramento" width="1500" height="750">
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                
+                <div id="data-card">
+                    <li><span>Area:</span> 108,889 sq km</li>
+                    <li><span>Population:</span> 11,237,196</li>
+                    <li><span>Capitol:</span> Guatemala City</li>
+                    <li><span>Language:</span> Spanish</li>
+                    <li><span>Currency:</span> Quetzal (GTQ)</li>
+                    <li><span>Time Zone:</span> UTC-6</li>
+                    <li><span>Calling Code:</span> +502</li>
+                    <li><span>Internet TLD:</span> .gt</li>
+                </div>
+            </section>
+            <section class="weather">
+                <h2 id="weather-heading">Weather <img id="weather-icon" src="" alt=""></h2>
+                <div id="weather-card"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Kevin Solorzano California
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</body>
+</html>

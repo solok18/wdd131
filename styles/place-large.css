@@ -1,0 +1,57 @@
+@media (min-width: 625px) {
+
+    .data {
+        border: 2px solid black;
+    }
+    
+    .weather {
+        border: 2px solid black;
+    }
+    .hero {
+        position: relative;
+        width: 100%;
+    }
+    .hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .data {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        /* bottom: 30%; */
+        /* transform: translate(-230%, -100%); */
+        background-color: aliceblue;
+        color: black;
+        padding: 20px;
+        width: 20%;
+        height: auto;
+        max-width: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #data-card {
+        max-width: 300px;
+        height: auto;
+    }
+    .weather {
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        /* transform: translate(-50%, -50%); */
+        background-color: aliceblue;
+        color: black;
+        padding: 20px;
+        width: 20%;
+        height: 20%;
+        height: auto;
+        max-width: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
