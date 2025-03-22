@@ -6,7 +6,7 @@ const weather = document.querySelector('#weather-card');
 
 
 
-const url = "https://api.openweathermap.org/data/2.5/forecast?lat=38.58&lon=-121.48&units=imperial&appid=0c57d46afcca46d45f1328b8d715c9e5"
+const url = "https://api.openweathermap.org/data/2.5/forecast?lat=14.64&lon=-90.51&units=imperial&appid=0c57d46afcca46d45f1328b8d715c9e5"
 
 async function apiFetch() {
     try{
@@ -51,7 +51,7 @@ apiFetch();
 
         const icon = `https://openweathermap.org/img/w/${l.weather[0].icon}.png`;
 
-        currentTemp.textContent =`${l.main.temp} Sacrament0, CA`;
+        currentTemp.textContent =`${l.main.temp} Guatemala City, Guatemala`;
         captionDesc.textContent = `${l.weather[0].description}`;
         windspeed.textContent = `wind speed: ${l.wind.speed}`
         
