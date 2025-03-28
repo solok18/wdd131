@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Playfair+Display&display=swap');
+/* Edit the whole body of the page, it will be a base design for the page */
+* {
+    /* box-sizing: border-box; */
+    font-family: Forum, Halvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-------------------- Edits to the body of the age can be made here --------------------*/
+body {
+    /* display: grid; */
+    /* height: 100vh; */
+    /* grid-template: auto 1fr auto / auto auto; */
+    color: #eee;
+    text-align: center;
+    
+}
+
+/*-------------------- Edits to the header of the page can be made here --------------------*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgb(18, 100, 167);
+    width: 100%;
+    /* min-height: 60px; */
+    /* max-width: 100%; */
+    
+}
+header h1 {
+    /* padding: 3rem; */
+    margin: 0;
+}
+
+/*-------------------- Edits to the menu bar are done here --------------------*/
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "─";
+}
+
+nav {
+    font-family: playfair Display, Halvatica, sans-serif;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 0 auto 2rem; */
+    /* max-width: 100%; */
+}
+.navig {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    background-color: rgb(18, 100, 167);
+    align-items: center;
+}
+.navig li {
+    /* flex: 1 1 auto; */
+    padding: .75rem;
+}
+.navig a {
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.navig :hover {
+	background-color: #f1e9e9;
+	color: #6e0e0e;
+	font-weight: 700;
+}
+.navig.open {
+    display: flex;
+}
+.open a{
+    display: block;
+}
+
+/*-------------------- Edits to the main element are made here --------------------*/
+main {
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+}
+main h2 {
+    padding: 20px;
+    color: #000;
+}
+.temple-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.temple-gallery section{
+    border: 2px solid black;
+    margin: 2rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgb(18, 70, 145);
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    align-items: center;
+    align-content: center;
+}
+
+.temple-gallery h3, p, img {
+    /* margin: 10px; */
+    padding: 5px;
+    
+}
+.temple-gallery img {
+    width: 100%;
+    max-width: 450px;
+    /* height: auto; */
+}
+
+
+
+/*-------------------- Edits to the footer are made here --------------------*/
+footer {
+    background: rgb(18, 100, 167);;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    /* max-width: 1200px; */
+    
+}

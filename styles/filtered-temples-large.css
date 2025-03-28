@@ -1,0 +1,33 @@
+@media (min-width: 625px) {
+  
+    header {
+        flex-direction: row;
+    }
+     nav ul {
+		display: flex;
+	}
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navig{
+        display: flex;
+		flex-direction: row;
+		justify-content: right;
+	}
+
+	.navig a {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.temple-gallery{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		/* align-items: center; */
+		/* align-content: center; */
+		width: 100%;
+		margin: 0 auto;
+		justify-content: center;
+	}
+}
