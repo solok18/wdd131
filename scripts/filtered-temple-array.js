@@ -55,7 +55,32 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+
     // Add more temple objects here...
+    {
+      templeName: "Guatemala City Guatemala",
+      location: "Guatemala City, Guatemala",
+      dedicated: "1984, December, 14",
+      area: 11610,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/guatemala-city-guatemala-temple/guatemala-city-guatemala-temple-6415-main.jpg"
+    },
+    {
+      templeName: "Quetzaltenango Guatemala",
+      location: "Quetzaltenango, Guatemala",
+      dedicated: "2011, December, 11",
+      area: 21085,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/quetzaltenango-guatemala-temple/quetzaltenango-guatemala-temple-15696-main.jpg"
+    },
+    {
+      templeName: "Cobán Guatemala",
+      location: "Cobán, Guatemala",
+      dedicated: "2024, June, 9",
+      area: 8772,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/coban-guatemala-temple/coban-guatemala-temple-46348-main.jpg"
+    },
   ];
 
 
@@ -67,16 +92,16 @@ const largeTemples = document.querySelector("#largeTemples");
 const smallTemples = document.querySelector("#smallTemples");
 
 oldTemples.addEventListener("click", () => {
-  createTempleCards(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 2000));
+  createTempleCards(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900));
 });
 newTemples.addEventListener("click", () => {
   createTempleCards(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000));
 });
 largeTemples.addEventListener("click", () => {
-  createTempleCards(temples.filter(temple => temple.area > 50000));
+  createTempleCards(temples.filter(temple => temple.area > 90000));
 });
 smallTemples.addEventListener("click", () => {
-  createTempleCards(temples.filter(temple => temple.area < 50000));
+  createTempleCards(temples.filter(temple => temple.area < 10000));
 });
 
 function createTempleCards(filteredTemples) {
