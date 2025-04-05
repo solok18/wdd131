@@ -73,11 +73,6 @@ main {
     color: #445ba9;
     font-size: .9rem;
 }
-
-.features {
-    padding-top: -5rem;
-}
-
 .wf1 input[type="text"],
 .wf1 input[type="date"],
 .wf1 select{

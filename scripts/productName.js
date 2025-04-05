@@ -29,13 +29,15 @@ const products = [
   document.addEventListener("DOMContentLoaded", () => {
     const select = document.getElementById("product");
 
+
+
     // This will generate the defualt placeholder
-    const defualtOption = document.createElement("option");
-    defualtOption.value = "";
-    defualtOption.textContent = "Choose a Product...";
-    defualtOption.disabled = true;
-    defualtOption.selected = true;
-    select.appendChild(defualtOption);
+    // const defualtOption = document.createElement("option");
+    // defualtOption.value = "";
+    // defualtOption.textContent = "Choose a Product...";
+    // defualtOption.disabled = true;
+    // defualtOption.selected = true;
+    // select.appendChild(defualtOption);
 
     // Here we will create each item
     products.forEach(product => {
