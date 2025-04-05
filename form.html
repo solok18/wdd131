@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta
+        name="description"
+        content="The WDD 131 - Temples is here to show you a gallery of temples you can view">
+    <meta name="author" content="Kevin Solorzano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <!-- <button id="menu" title="Menu"></button>
+        <nav>
+            <ul class="navig">
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Old</a></li>
+                <li><a href="#" target="_blank">New</a></li>
+                <li><a href="#" target="_blank">Large</a></li>
+                <li><a href="#" target="_blank">Small</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <legend>Review</legend>
+                <div>Product Name*</div>
+                <label><select id="product" name="product" required></select></label>
+
+                <div>Overall Rating*</div>
+                <label><input type="radio" name="review" value="oneStar" required>&#9733;</label>
+                <label><input type="radio" name="review" value="twoStars">&#9733; &#9733;</label>
+                <label><input type="radio" name="review" value="threeStarts">&#9733; &#9733; &#9733;</label>
+                <label><input type="radio" name="review" value="fourStarts">&#9733; &#9733; &#9733; &#9733;</label>
+                <label><input type="radio" name="review" value="fiveStarts">&#9733; &#9733; &#9733; &#9733; &#9733;</label>
+                
+                <div>Date of Installation*</div>
+                <label><input type="date" name="completedDate" id="dateInstal" required></label>
+
+                <div class="features">Which features did you find useful in the product? (Check all that apply)</div>
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="use" name="use" value="yes">Ease of use</label>
+                <label><input type="checkbox" id="perform" name="perform" value="yes">Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+
+                <div>Write Review (optional)</div>
+                <textarea name="description" id="description" cols="40" rows="10"></textarea>
+                <!-- <label ><input type="hidden" name="dt" id="dt"></label> -->
+
+                <div>Name (optional)</div>
+                <label><input type="text" id="name" name="name"></label>
+                <label ><input type="hidden" name="dt" id="dt"></label>
+                
+            </fieldset>
+            <input type="submit" value="Give Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Kevin Solorzano California
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/productName.js"></script>
+</body>
+</html>
