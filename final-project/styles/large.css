@@ -1,0 +1,59 @@
+@media only screen and (min-width: 640px){
+    /*-------------------- HEADER --------------------*/
+    /*========== MENU ==========*/
+    #menu {
+        display: none;
+    }
+    /*-------------------- NAVIGATION --------------------*/
+    nav ul {
+        display: flex;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: right; */
+    }
+    .navigation a{
+        display: block;
+        flex: 1 1 100%;
+    }
+    /*-------------------- MAIN --------------------*/
+    /*======== CARDS ========*/
+    .templeCard {
+        grid-column: 1/2;
+    }
+    .locationCard {
+        grid-column: 2/3;
+    }
+    .locationCard img {
+
+        grid-column: 1/2;
+        
+    }
+    .locationCard ul{
+        grid-column: 2/3;
+    }
+    .locationCard picture {
+        grid-column: 1/2;
+    }
+    /*-------------------- TEMPLE MAIN --------------------*/
+    /*========= CARD =========*/
+    .cali-temples {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    /*-------------------- Location MAIN --------------------*/
+    /*========= CARD =========*/
+    .cali-locations {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}

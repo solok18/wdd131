@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring LDS Temples Across California</title>
+    <meta name="description" content="Exploring LDS Temples Across California is here to provide information about the temples and the locations where they are found.">
+    <meta name="author" content="Kevin Solorzano">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <h1>Exploring LDS Temples Across California</h1>
+        <button id="menu" title="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <section class="hero">
+            <picture>
+                <source srcset="images/sac-temple-small.webp" media="(max-width: 500px)">
+                <source srcset="images/sac-temple-medium.webp" media="(max-width: 1000px)">
+                <img class="hero-image" src="images/sac-temple-large.webp" alt="sacramento" width="1500" height="750">
+            </picture>
+        </section>
+        <section class="templeCard">
+            <h2>Key Features & Purposes Temples  </h2>
+            <img src="https://picsum.photos/300/400" alt="">
+            <div>
+                <h5>Sacred Ordinances</h5>
+                <p>LDS temples are the only places where specific ordinances, like the endowment and eternal marriage, can be performed.</p>
+            </div>
+            <div>
+                <h5>Covenants with God</h5>
+                <p>Members make solemn covenants with God within the temple, signifying a commitment to follow God's teachings and commandments.</p>
+            </div>
+            <div>
+                <h5>Baptisms for the Dead</h5>
+                <p>Temples are where members perform ordinances, such as baptism, on behalf of deceased individuals who did not have the opportunity to receive them in this life.</p>
+            </div>
+            <div>
+                <h5>Family Unity</h5>
+                <p>Temples are a place where families can be sealed together for eternity through the ordinance of eternal marriage.</p>
+            </div>
+            <div>
+                <h5>Spiritual Growth</h5>
+                <p>Temples provide opportunities for spiritual reflection, learning about God's plan of happiness, and feeling the Spirit of God.</p>
+            </div>
+            <div>
+                <h5>House of the Lord</h5>
+                <p>The temples are considered "houses of the Lord," where members can draw closer to God and His Son, Jesus Christ.</p>
+            </div>
+            <!-- <h2>Temples</h2> -->
+        </section>
+        <section class="locationCard">
+            <h2>Facts About California</h2>
+            <picture>
+                <source class="cali" srcset="images/cali.webp" media="(max-width: 640px)">
+                <!-- <source srcset="images/sac-temple-medium.webp" media="(max-width: 1000px)"> -->
+                <img class="caliv" src="images/cali-veritcal.webp" alt="california" width="1500" height="750">
+            </picture>
+            <!-- <img src="images/cali.webp" alt="california"> -->
+            <ul>
+                <li>Most Populous State
+                    <ul>
+                        <li>California has a significant population, with over one in eight Americans residing within its borders</li>
+                    </ul>
+                </li>
+                <li>"The Golden State"
+                    <ul>
+                        <li>This nickname reflects the state's rich history, particularly during the Gold Rush, and is further emphasized by the state flower, the California poppy, which is a golden color.</li>
+                    </ul>
+                </li>
+                <li>Giant Sequoias
+                    <ul>
+                        <li>Sequoia National Park in California is home to the world's largest trees, the giant sequoias, which are known for their massive size and long lifespans.</li>
+                    </ul>
+                </li>
+                <li>Diverse Landscapes
+                    <ul>
+                        <li>California's geography is incredibly diverse, ranging from the rugged coastline and beaches to the desert landscapes of Death Valley, the Sierra Nevada mountain range, and vast agricultural areas.</li>
+                    </ul>
+                </li>
+                <li>Frequent Earthquakes
+                    <ul>
+                        <li>While many earthquakes are minor, California experiences a significant number each year, reflecting its location along the Pacific Ring of Fire.</li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- <h2>Facts About California</h2> -->
+        </section>
+    </main>
+    <Footer>
+        <p>
+        &copy; <span id="currentyear"></span> | Kevin Solorzano | California
+        </p>
+        <p id="lastModified"></p>
+    </Footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</body>
+</html>
