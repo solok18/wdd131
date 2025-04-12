@@ -175,7 +175,7 @@ function createLocationCards(filteredLocations) {
     document.querySelector(".cali-locations").innerHTML = "";
     filteredLocations.forEach(location => {
         let card = document.createElement("section");
-        let name = document.createElement("h3");
+        let name = document.createElement("h2");
         let fact1 = document.createElement("p");
         let fact2 = document.createElement("p");
         let food1 = document.createElement("p");
@@ -186,12 +186,27 @@ function createLocationCards(filteredLocations) {
         // let img = document.createElement("img");
 
         name.textContent = location.name;
+        let factSection = document.createElement("div");
+        factSection.classList.add("fact-sect");
         fact1.innerHTML = `<span class="label">Fact:</span> ${location.fact1}`;
         fact2.innerHTML = `<span class="label">Fact:</span> ${location.fact2}`;
-        food1.innerHTML = `<span class="label">Food:</span> <a href="${location.foodUrl1}" target="_blank"> ${location.food1}</a>`;
-        food2.innerHTML = `<span class="label">Food:</span> ${location.food2}`;
+        factSection.appendChild(fact1);
+        factSection.appendChild(fact2);
+        // food1.innerHTML = `<span class="label">Food:</span> <a href="${location.foodUrl1}" target="_blank"> ${location.food1}</a>`;
+        
+        let foodSection = document.createElement("div");
+        foodSection.classList.add("food-sect");
+        food1.innerHTML = `<span class="label">Dine out:</span> ${location.food1}`;
+        food2.innerHTML = `<span class="label">Dine out:</span> ${location.food2}`;
+        foodSection.appendChild(food1);
+        foodSection.appendChild(food2);
+
+        let lodgingSection = document.createElement("div");
+        lodgingSection.classList.add("lodging-sect");
         lodging1.innerHTML = `<span class="label">Lodging:</span> ${location.location1}`;
         lodging2.innerHTML = `<span class="label">Lodging:</span> ${location.location2}`;
+        lodgingSection.appendChild(lodging1);
+        lodgingSection.appendChild(lodging2);
         // img.setAttribute("src", location.imageurl);
         // img.setAttribute("alt", `${location.name} location`);
         // img.setAttribute("loading", "lazy");
@@ -199,12 +214,12 @@ function createLocationCards(filteredLocations) {
         // img.setAttribute("height", "200")
 
         card.appendChild(name);
-        card.appendChild(fact1);
-        card.appendChild(fact2);
-        card.appendChild(food1);
-        card.appendChild(food2);
-        card.appendChild(lodging1);
-        card.appendChild(lodging2);
+        card.appendChild(factSection);
+        // card.appendChild(fact2);
+        card.appendChild(foodSection);
+        // card.appendChild(food2);
+        card.appendChild(lodgingSection);
+        // card.appendChild(lodging2);
         // card.appendChild(area);
         // card.appendChild(img);
         

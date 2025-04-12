@@ -128,13 +128,13 @@ nav a:hover{
     grid-column: 1/3;
     /* margin: 0.5rem; */
     margin: 1rem;
-    /* padding: 0; */
+    padding: 0.5px;
 }
 .templeCard img {
     width: 100%;
     height: auto;
     padding: 0;
-    /* grid-column: 1/3; */
+    grid-column: 1/3;
     /* grid-row: 2/3; */
     /* height: auto; */
 }
@@ -173,8 +173,8 @@ nav a:hover{
     width: 100%;
     height: auto;
     padding: 0;
-    /* grid-column: 1/3;
-    grid-row: 2/3; */
+    grid-column: 1/3;
+    /*grid-row: 2/3; */
     /* height: auto; */
 }
 .locationCard picture {
@@ -222,6 +222,23 @@ footer {
     color: var(--secondary-color);
 }
 /*-------------------- TEMPLES MAIN --------------------*/
+.about-cali-temple{
+    /* width: 100%; */
+    /* border: 5px solid var(--accent2-color); */
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+.about-cali-temple h2{
+    text-align: center;
+    padding: .05rem;
+}
+.about-cali-temple p{
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
 /*========= CARD =========*/
 .cali-temples {
     display: flex;
@@ -259,6 +276,21 @@ footer {
 }
 
 /*-------------------- LOCATION MAIN --------------------*/
+.about-cali-location{
+    /* width: 100%; */
+    /* border: 5px solid var(--accent2-color); */
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+.about-cali-location h2{
+    text-align: center;
+    padding: .05rem;
+}
+
+
+/*========= CARD =========*/
 .cali-locations {
     display: flex;
     flex-direction: column;
@@ -292,6 +324,17 @@ footer {
 
 .cali-locations h3 {
     font-family: var(--heading-flocations);
+}
+.fact-sect {
+    /* font-family: "Roboto",sans-serif; */
+    font-style: italic;
+    font-weight: 600;
+}
+
+.lodging-sect {
+    /* font-family: "Roboto",sans-serif; */
+    font-style: italic;
+    font-weight: 600;
 }
 /*-------------------- FOOTER --------------------*/
 /*-------------------- FOOTER --------------------*/

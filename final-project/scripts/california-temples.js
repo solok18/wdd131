@@ -153,25 +153,38 @@ const caliTemples = [
             let card = document.createElement("section");
             let name = document.createElement("h3");
             let location = document.createElement("p");
+            let announce = document.createElement("p");
+            let phone = document.createElement("p");
+            let grounbraking = document.createElement("p");
+            let siteDedication = document.createElement("p");
             let dedication = document.createElement("p");
-            let area = document.createElement("p");
+            let decicatedBy = document.createElement("p");
             let img = document.createElement("img");
     
-            name.textContent = `${temple.name} Temple`;
-            location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-            dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.addresses}`;
-            area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+            name.textContent = `${temple.name} ${temple.location} Temple`;
+            location.innerHTML = `<span class="label">Address:</span> ${temple.addresses}`;
+            announce.innerHTML = `<span class="label">Announced on:</span> ${temple.announcement}`;
+            phone.innerHTML = `<span class="label">Phone:</span> ${temple.phone}`;
+            grounbraking.innerHTML = `<span class="label">Groundbraking:</span> ${temple.grounbraking}`;
+            siteDedication.innerHTML = `<span class="label">Site Dedication by:</span> ${temple.siteDedication}`;
+            dedication.innerHTML = `<span class="label">Dedication date:</span> ${temple.dedication}`;
+            decicatedBy.innerHTML = `<span class="label">Dedicated by:</span> ${temple.decicatedBy}`;
             img.setAttribute("src", temple.imageurl);
             img.setAttribute("alt", `${temple.name} Temple`);
             img.setAttribute("loading", "lazy");
             // img.setAttribute("width", "300")
             // img.setAttribute("height", "200")
-    
+            
             card.appendChild(name);
-            card.appendChild(location);
-            card.appendChild(dedication);
-            // card.appendChild(area);
             card.appendChild(img);
+            card.appendChild(location);
+            card.appendChild(announce);
+            card.appendChild(phone);
+            card.appendChild(grounbraking);
+            card.appendChild(siteDedication);
+            card.appendChild(dedication);
+            card.appendChild(decicatedBy);
+            // card.appendChild(img);
             
             document.querySelector(".cali-temples").appendChild(card);
 
