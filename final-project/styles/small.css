@@ -124,36 +124,41 @@ nav a:hover{
 .templeCard{
     grid-row: 2/3;
 }
-.templeCard img {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    grid-column: 1/2;
-    grid-row: 2/8;
-    /* height: auto; */
-}
-.templeCard h5,p{
-    grid-column: 2/3;
-    /* grid-row: 2/7; */
-    /* padding: 5px; */
-} 
-
 .templeCard {
     grid-column: 1/3;
     /* margin: 0.5rem; */
     margin: 1rem;
     /* padding: 0; */
 }
+.templeCard img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    /* grid-column: 1/3; */
+    /* grid-row: 2/3; */
+    /* height: auto; */
+}
+.templeCard picture {
+    grid-column: 1/3;
+}
+.templeCard h5,p{
+    grid-column: 1/3;
+    /* grid-row: 2/7; */
+} 
+.templeCard h5{
+    padding-top: 10px;
+}
+
 .templeCard div {
     /* display: flex; */
     align-items: center;
     justify-content: center;
 }
 .templeCard h5{
-    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
 .templeCard p {
-    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 /*+++++++++++++++ LOCATION CARD +++++++++++++++*/
 .locationCard{
@@ -164,18 +169,24 @@ nav a:hover{
     margin: 1rem;
     /* margin: 0.5rem; */
 }
-.locationCard h5 {
-    grid-column: 1/2;
-    /* grid-row: 2/7; */
-    /* padding: 5px; */
-} 
 .locationCard img {
     width: 100%;
     height: auto;
     padding: 0;
-    grid-column: 1/3;
-    grid-row: 2/3;
+    /* grid-column: 1/3;
+    grid-row: 2/3; */
     /* height: auto; */
+}
+.locationCard picture {
+    grid-column: 1/3;
+}
+.locationCard h5,p {
+    grid-column: 1/3;
+    /* grid-row: 2/7; */
+    /* padding: 5px; */
+} 
+.locationCard h5{
+    padding-top: 10px;
 }
 .locationCard div {
     /* display: flex; */
@@ -186,12 +197,12 @@ nav a:hover{
     grid-column: 1/3;
 }
 .locationCard h5{
-    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
 .locationCard p {
-    font-size: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
-.locationCard ul{
+/* .locationCard ul{
     grid-column: 1/3;
     list-style: none;
     display: flex;
@@ -202,7 +213,7 @@ nav a:hover{
 .locationCard li ul{
     font-size: 1rem;
     padding-top: 0px;
-}
+} */
 /*-------------------- FOOTER --------------------*/
 footer {
     background-color: var(--primary-color);

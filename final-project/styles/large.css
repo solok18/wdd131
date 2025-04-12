@@ -19,23 +19,32 @@
     }
     /*-------------------- MAIN --------------------*/
     /*======== CARDS ========*/
+    /*+++++++++++++++ TEMPLE CARD +++++++++++++++*/
     .templeCard {
         grid-column: 1/2;
     }
-    .locationCard {
-        grid-column: 2/3;
-    }
-    .locationCard img {
-
+    .templeCard picture {
         grid-column: 1/2;
-        
+        grid-row: 2/8;
     }
-    .locationCard ul{
+    .templeCard h5,p{
+        grid-column: 2/3;
+        /* grid-row: 2/7; */
+        /* padding: 5px; */
+    } 
+    /*+++++++++++++++ LOCATION CARD +++++++++++++++*/
+    .locationCard {
         grid-column: 2/3;
     }
     .locationCard picture {
         grid-column: 1/2;
+        grid-row: 2/7;
     }
+    .locationCard h5,p{
+        grid-column: 2/3;
+        /* grid-row: 2/7; */
+        /* padding: 5px; */
+    } 
     /*-------------------- TEMPLE MAIN --------------------*/
     /*========= CARD =========*/
     .cali-temples {
