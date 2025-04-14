@@ -20,33 +20,24 @@
     /*-------------------- MAIN --------------------*/
     /*======== CARDS ========*/
     /*+++++++++++++++ TEMPLE CARD +++++++++++++++*/
-    /* .templeCard {
+    .templeCard {
         grid-column: 1/2;
-        max-width: 80rem;
+        grid-row: 2/3;
+        /* max-width: 80rem; */
         
     }
-    .templeCard picture {
+    /* .templeCard picture {
         grid-column: 1/2;
         grid-row: 2/8;
-    } */
+    }
     .templeCard h5,p{
         grid-column: 2/3;
-    } 
+    }  */
     /*+++++++++++++++ LOCATION CARD +++++++++++++++*/
-    /* .locationCard {
+    .locationCard {
         grid-column: 2/3;
         grid-row: 2/3;
-        max-width: 80rem;
     }
-    .locationCard picture {
-        grid-column: 1/2;
-        grid-row: 2/7;
-    } */
-    .locationCard h5,p{
-        grid-column: 2/3;
-        /* grid-row: 2/7; */
-        /* padding: 5px; */
-    } 
     /*-------------------- TEMPLE MAIN --------------------*/
     /*========= CARD =========*/
     .cali-temples {
