@@ -27,83 +27,86 @@
     <main class="home">
         <section class="hero">
             <picture>
-                <source srcset="images/sac-temple-small.webp" media="(max-width: 500px)">
+                <source srcset="images/sac-temple-larger.webp" media="(max-width: 639px)">
                 <source srcset="images/sac-temple-medium.webp" media="(max-width: 1000px)">
-                <img class="hero-image" src="images/sac-temple-large.webp" alt="sacramento" width="1500" height="750">
+                <img class="hero-image" src="images/sac-temple-large.webp" alt="sacramento" width="1500" height="750"
+                loading="lazy">
             </picture>
         </section>
-        <section class="templeCard">
-            <h2>Key Features & Purposes Temples  </h2>
-            <!-- <picture>
-                <source class="cali" srcset="images/cali.webp" media="(max-width: 640px)">
-                
-                <img class="caliv" src="images/cali-veritcal.webp" alt="california" width="1500" height="750">
-            </picture> -->
-            <img src="images/temple.webp" alt="temple" loading="lazy">
+
+        <section class="templeCard"> <!-- It is better to use a div with a list then to use div for every fact. Doing this does not effect the h2 size, compare to the div that can effect the h2 height and distort it so it does not mat the others.-->
             <div>
-                <h5>Sacred Ordinances</h5>
-                <p>LDS temples are the only places where specific ordinances, like the endowment and eternal marriage, can be performed.</p>
+                <h2>Key Features & Purposes Temples</h2>
+                <img src="images/temple.webp" alt="temple" loading="lazy">
+                <ul>
+                    <li>
+                        <h5>Sacred Ordinances</h5>
+                        <p>LDS temples are the only places where specific ordinances, like the endowment and eternal marriage, can be performed.</p>
+                    </li>
+                    <li>
+                        <h5>Covenants with God</h5>
+                        <p>Members make solemn covenants with God within the temple, signifying a commitment to follow God's teachings and commandments.</p>
+                    </li>
+                    <li>
+                        <h5>Baptisms for the Dead</h5>
+                        <p>Temples are where members perform ordinances, such as baptism, on behalf of deceased individuals who did not have the opportunity to receive them in this life.</p>
+                    </li>
+                    <li>
+                        <h5>Family Unity</h5>
+                        <p>Temples are a place where families can be sealed together for eternity through the ordinance of eternal marriage.</p>
+                    </li>
+                    <li>
+                        <h5>Spiritual Growth</h5>
+                        <p>Temples provide opportunities for spiritual reflection, learning about God's plan of happiness, and feeling the Spirit of God.</p>
+                    </li>
+                    <li>
+                        <h5>House of the Lord</h5>
+                        <p>The temples are considered "houses of the Lord," where members can draw closer to God and His Son, Jesus Christ.</p>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <h5>Covenants with God</h5>
-                <p>Members make solemn covenants with God within the temple, signifying a commitment to follow God's teachings and commandments.</p>
-            </div>
-            <div>
-                <h5>Baptisms for the Dead</h5>
-                <p>Temples are where members perform ordinances, such as baptism, on behalf of deceased individuals who did not have the opportunity to receive them in this life.</p>
-            </div>
-            <div>
-                <h5>Family Unity</h5>
-                <p>Temples are a place where families can be sealed together for eternity through the ordinance of eternal marriage.</p>
-            </div>
-            <div>
-                <h5>Spiritual Growth</h5>
-                <p>Temples provide opportunities for spiritual reflection, learning about God's plan of happiness, and feeling the Spirit of God.</p>
-            </div>
-            <div>
-                <h5>House of the Lord</h5>
-                <p>The temples are considered "houses of the Lord," where members can draw closer to God and His Son, Jesus Christ.</p>
-            </div>
-            <!-- <h2>Temples</h2> -->
         </section>
         <section class="locationCard">
-            <h2>Facts About California</h2>
-            <!-- <picture>
-                <source class="cali" srcset="images/cali.webp" media="(max-width: 640px)">
-                
-                <img class="caliv" src="images/cali-veritcal.webp" alt="california" width="1500" height="750">
-            </picture> -->
-            <img src="images/cali.webp" alt="california" loading="lazy">
             <div>
-                <h5>Most Populous State</h5>
-                <p>California has a significant population, with over one in eight Americans residing within its borders</p>
-            </div> 
-            <div>
-                <h5>"The Golden State"</h5>
-                 <p>This nickname reflects the state's rich history, particularly during the Gold Rush, and is further emphasized by the state flower, the California poppy, which is a golden color.</p>
+                <h2>Facts about Calidornia</h2>
+                <!-- <picture>
+                    <source srcset="images/cali.webp" media="(max-width: 639px)">
+                    <img src="images/cali-veritcal.webp" alt="sacramento" width="640" height="200"
+                    loading="lazy">
+                </picture> -->
+                <img src="images/cali.webp" alt="temple" loading="lazy">
+                <ul>
+                    <li>
+                        <h5>Most Populous State</h5>
+                        <p>California has a significant population, with over one in eight Americans residing within its borders</p> 
+                    </li>
+                    <li>
+                        <h5>"The Golden State"</h5>
+                        <p>This nickname reflects the state's rich history, particularly during the Gold Rush, and is further emphasized by the state flower, the California poppy, which is a golden color.</p>
+                    </li>
+                    <li>
+                        <h5>Giant Sequoias</h5>
+                        <p>Sequoia National Park in California is home to the world's largest trees, the giant sequoias, which are known for their massive size and long lifespans.</p>
+                    </li>
+                    <li>
+                        <h5>Diverse Landscapes</h5>
+                        <p>California's geography is incredibly diverse, ranging from the rugged coastline and beaches to the desert landscapes of Death Valley, the Sierra Nevada mountain range, and vast agricultural areas.</p>
+                    </li>
+                    <li>
+                        <h5>Frequent Earthquakes</h5>
+                        <p>While many earthquakes are minor, California experiences a significant number each year, reflecting its location along the Pacific Ring of Fire.</p>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <h5>Giant Sequoias</h5>
-                <p>Sequoia National Park in California is home to the world's largest trees, the giant sequoias, which are known for their massive size and long lifespans.</p>
-            </div>
-            <div>
-                <h5>Diverse Landscapes</h5>
-                <p>California's geography is incredibly diverse, ranging from the rugged coastline and beaches to the desert landscapes of Death Valley, the Sierra Nevada mountain range, and vast agricultural areas.</p>
-            </div>
-            <div>
-                <h5>Frequent Earthquakes</h5>
-                <p>While many earthquakes are minor, California experiences a significant number each year, reflecting its location along the Pacific Ring of Fire.</p>
-            </div>
-            <!-- <h2>Facts About California</h2> -->
         </section>
     </main>
-    <Footer>
+    <footer>
         <p>
         &copy; <span id="currentyear"></span> | Kevin Solorzano | California
         </p>
         <p id="lastModified"></p>
         <p id="pageCount">Loading...</p>
-    </Footer>
+    </footer>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/page-count.js" defer></script>
